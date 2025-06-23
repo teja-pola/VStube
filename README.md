@@ -1,6 +1,6 @@
 # VStube - YouTube in VS Code
 
-![ChatGPT Image Jun 23, 2025, 04_34_28 PM](https://github.com/user-attachments/assets/265cf6fc-143e-4234-8c8c-39d0de152d5f)
+![ChatGPT Image Jun 23, 2025, 04_34_28 PM](https://github.com/user-attachments/assets/dc59e2ee-8d08-4164-a9a0-8492962b719e)
 
 
 Watch and search YouTube videos directly inside Visual Studio Code!  
