@@ -1,0 +1,83 @@
+{
+  "name": "youtube-in-vs-code",
+  "displayName": "YouTube in VS Code",
+  "description": "Watch YouTube directly inside VS Code via a webview.",
+  "version": "0.0.1",
+  "publisher": "user",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "youtube-in-vs-code.openYouTube",
+        "title": "Open YouTube"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "youtube-sidebar",
+          "title": "YouTube",
+          "icon": "$(play-circle)"
+        }
+      ]
+    },
+    "views": {
+      "youtube-sidebar": [
+        {
+          "type": "webview",
+          "id": "youtube-sidebar",
+          "name": "YouTube"
+        }
+      ],
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "youtube-explorer",
+          "name": "YouTube"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "YouTube in VS Code",
+      "properties": {
+        "youtubeInVSCode.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "YouTube Data API Key"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
