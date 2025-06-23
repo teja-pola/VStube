@@ -1,13 +1,14 @@
 {
   "name": "youtube-in-vs-code",
   "displayName": "YouTube in VS Code",
-   "repository": {
+  "icon": "icon.png",
+  "repository": {
     "type": "git",
     "url": "https://github.com/teja-pola/VStube.git"
   },
   "description": "Watch YouTube directly inside VS Code via a webview.",
   "version": "0.0.1",
-  "publisher": "user",
+  "publisher": "DharmaTeja",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -39,14 +40,17 @@
         {
           "type": "webview",
           "id": "youtube-sidebar",
-          "name": "YouTube"
+          "name": "YouTube",
+          "icon": "icon.png"
+
         }
       ],
       "explorer": [
         {
           "type": "webview",
           "id": "youtube-explorer",
-          "name": "YouTube"
+          "name": "YouTube",
+          "icon": "icon.png"
         }
       ]
     },
