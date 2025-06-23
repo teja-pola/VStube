@@ -1,4 +1,7 @@
-# YouTube in VS Code
+# VStube - YouTube in VS Code
+
+![ChatGPT Image Jun 23, 2025, 04_34_28 PM](https://github.com/user-attachments/assets/265cf6fc-143e-4234-8c8c-39d0de152d5f)
+
 
 Watch and search YouTube videos directly inside Visual Studio Code!  
 No more switching tabs—code and watch side-by-side.
@@ -17,7 +20,7 @@ No more switching tabs—code and watch side-by-side.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How to use ?
 
 ### 1. **Install the Extension**
 - Search for `YouTube in VS Code` in the Extensions Marketplace and install.
@@ -41,6 +44,16 @@ No more switching tabs—code and watch side-by-side.
 - Use the search bar to find any video.
 - Click a video to play it in the sidebar while you code.
 
+---
+## 🤝 How to Contribute ?
+
+- Clone the rpo
+`https://github.com/teja-pola/VStube.git`
+- Install node_modules
+`npm install`
+- Compile the code
+`npm run compile`
+- Follow the above how to use steps to test and create a pull request.
 ---
 
 ## 🛠️ Settings
@@ -86,12 +99,4 @@ Open an issue on [GitHub](https://github.com/yourusername/your-repo) or use the 
 
 ---
 
-## 📦 Publishing (For Maintainers)
-
-1. Install [vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
-2. Run `vsce package` to create a `.vsix`.
-3. Run `vsce publish` to publish to the Marketplace.
-
----
-
-## © 2024 Your Name
+## © 2025 VStube
